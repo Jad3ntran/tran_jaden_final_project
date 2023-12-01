@@ -1,7 +1,7 @@
 # This file was created by Jaden Tran
 
 '''
-Game revolved around basketball (my favorite sport)
+Game revolved around basketball
 
 Goals: Score as many points(baskets) as you can
 Rules: the further you are from the basket, the more points 
@@ -11,3 +11,5 @@ timer displayed, as well as a top score list.
 Freedom: can move as far as the end of the screen in order to score more points, or as close to score easy, but not
 as many points
 '''
+
+# TEST PUSH
