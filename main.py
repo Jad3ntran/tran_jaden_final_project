@@ -11,6 +11,4 @@ timer displayed, as well as a top score list.
 Freedom: can move as far as the end of the screen in order to score more points, or as close to score easy, but not
 as many points
 '''
-
-# TEST PUSH
-# TEST PUSH 2
+# YO
