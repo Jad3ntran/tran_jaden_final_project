@@ -11,4 +11,9 @@ timer displayed, as well as a top score list.
 Freedom: can move as far as the end of the screen in order to score more points, or as close to score easy, but not
 as many points
 '''
-# YO
+# Importing necessary libraries and modules
+import pygame as pg
+from pygame.sprite import Sprite
+import os
+from settings import *
+from sprites import *
