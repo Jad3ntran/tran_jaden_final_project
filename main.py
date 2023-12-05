@@ -17,3 +17,10 @@ from pygame.sprite import Sprite
 import os
 from settings import *
 from sprites import *
+
+class Game:
+    def __init__(self):
+        # Initialize pygame and create a window
+        pg.init()
+        pg.mixer.init()
+        self.screen = pg.display.set_mode((WIDTH, HEIGHT))
