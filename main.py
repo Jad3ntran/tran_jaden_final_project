@@ -1,4 +1,13 @@
 # main.py
+# This file was created by Jaden Tran
+
+'''
+Rules:
+Goal: Score as many points as you can in the limited amount of time you have
+Rules: In order to score points, you need to hit the basketball hoop that is moving up and down. The different colored balls you are able to shoot give you different benefits
+Feedback: score displayed on top of the screen, as well as the amount of time you have left
+Freedom: Aim wherever you want in order to score as many baskets as you can at the moving hoop
+'''
 
 # Importing necessary libraries and modules
 import pygame as pg
@@ -48,7 +57,7 @@ class Game:
         self.hoops.add(self.hoop)
 
         self.game_over = False
-        self.shot_time = 60  # Initial shot time in seconds
+        self.shot_time = 20  # Initial shot time in seconds
         self.shot_effect = None  # Variable to store the effect of the shot
 
     def run(self):

@@ -61,3 +61,4 @@ Inspiration, code snippets, etc.
 https://www.w3schools.com/
 https://www.techwithtim.net/tutorials/game-development-with-python/pygame-tutorial/projectiles
 https://www.tutorialspoint.com/modelling-the-projectile-motion-using-python
+https://www.youtube.com/watch?v=Fp1dudhdX8k&ab_channel=buildwithpython
