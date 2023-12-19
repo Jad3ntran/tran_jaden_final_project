@@ -73,15 +73,26 @@ class Hoop(pg.sprite.Sprite):
         self.image = pg.image.load(os.path.join(img_folder, 'hoop.png')).convert()
         self.image.set_colorkey(WHITE)
         self.rect = self.image.get_rect()
-        self.rect.center = (WIDTH - 50, HEIGHT / 4)  # Adjust the coordinates as needed
-        self.speed = 8  # Speed of the hoop's vertical movement
+        self.rect.center = (WIDTH - 50, HEIGHT / 4)
+        self.speed = 8  # Initial speed of the hoop's vertical movement
+        self.direction = 1  # Initial direction (1 for down, -1 for up)
+        self.timer = 0  # Timer to control irregular movement
 
     def update(self):
-        self.rect.y += self.speed
+        # Adjust the timer
+        self.timer += self.game.dt
+
+        # Change direction randomly every 1 second
+        if self.timer >= 0.7:
+            self.direction = random.choice([-1, 1])
+            self.timer = 0
+
+        # Move hoop vertically
+        self.rect.y += self.speed * self.direction
 
         # Reverse the direction when the hoop reaches the top or bottom
         if self.rect.bottom > HEIGHT or self.rect.top < 0:
-            self.speed = -self.speed
+            self.direction = -self.direction
 
 class Basketball(pg.sprite.Sprite):
     def __init__(self, game, pos, velocity, color=None):
@@ -134,7 +145,7 @@ class Basketball(pg.sprite.Sprite):
             self.game.score -= 2  # Lose 5 points for missing the hoop with a regular ball
             print("Missed shot with regular ball")  # Add this line for debugging
         elif self.color in ["blue", "red"]:
-            self.game.score -= 5  # Lose 2 points for missing the hoop with a colored ball
+            self.game.score -= 2  # Lose 2 points for missing the hoop with a colored ball
             print("Missed shot with colored ball")  # Add this line for debugging
 
         self.kill()  # Remove the basketball from the screen
