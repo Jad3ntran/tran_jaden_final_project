@@ -13,6 +13,7 @@ of time. The game will have different colored basketballs, some balls giving you
 
 * Describe any prerequisites, libraries, OS version, etc., needed before installing program.
 * ex. Windows 10
+
 - Requires python 3.11, pygame, turtle
 
 ### Installing
@@ -25,6 +26,7 @@ Download program on github
 
 * How to run the program
 * Step-by-step bullets
+
 ```
 code blocks for commands
 ```
@@ -62,3 +64,4 @@ https://www.w3schools.com/
 https://www.techwithtim.net/tutorials/game-development-with-python/pygame-tutorial/projectiles
 https://www.tutorialspoint.com/modelling-the-projectile-motion-using-python
 https://www.youtube.com/watch?v=Fp1dudhdX8k&ab_channel=buildwithpython
+https://www.youtube.com/watch?v=Gyc5dMdP2uc&ab_channel=thenewboston
