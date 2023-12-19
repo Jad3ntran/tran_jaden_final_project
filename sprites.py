@@ -142,10 +142,10 @@ class Basketball(pg.sprite.Sprite):
     def handle_missed_shot(self):
         # Handle losing points for a missed shot
         if self.color == "regular":
-            self.game.score -= 2  # Lose 5 points for missing the hoop with a regular ball
+            self.game.score = max(0, self.game.score - 2)  # Do not let the score go below zero and lose 2 points when you miss a shot
             print("Missed shot with regular ball")  # Add this line for debugging
         elif self.color in ["blue", "red"]:
-            self.game.score -= 2  # Lose 2 points for missing the hoop with a colored ball
+            self.game.score = max(0, self.game.score - 2)  # Do not let the score go below zero and lose 2 points when you miss a shot
             print("Missed shot with colored ball")  # Add this line for debugging
 
         self.kill()  # Remove the basketball from the screen
