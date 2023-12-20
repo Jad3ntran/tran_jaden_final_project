@@ -20,13 +20,15 @@ of time. The game will have different colored basketballs, some balls giving you
 
 * How/where to download your program
 * Any modifications needed to be made to files/folders
-Download program on github
+
+- Download program on github
 
 ### Executing program
 
 * How to run the program
 * Step-by-step bullets
 
+- need to have python installed
 ```
 code blocks for commands
 ```
